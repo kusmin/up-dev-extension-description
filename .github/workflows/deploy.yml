@@ -32,4 +32,3 @@ jobs:
           user_email: renan.lagee@gmail.com
           publish_branch: master
           cname: extensao.updev.dev.br
-
