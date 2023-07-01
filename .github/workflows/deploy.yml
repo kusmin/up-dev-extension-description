@@ -25,10 +25,10 @@ jobs:
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.HUGODEPLOY }}
           external_repository: kusmin/updev-experience-deploy
           publish_dir: ./dist
           user_name: renan
           user_email: renan.lagee@gmail.com
           publish_branch: master
           cname: extensao.updev.dev.br
+          personal_token: ${{ secrets.EXTENSAO }}
