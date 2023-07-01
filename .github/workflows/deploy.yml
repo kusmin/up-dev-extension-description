@@ -28,4 +28,4 @@ jobs:
           repository: kusmin/updev-experience-deploy
           branch: master
           folder: dist
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DEPLOY }}
