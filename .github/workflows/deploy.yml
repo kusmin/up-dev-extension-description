@@ -23,7 +23,7 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           personal_token: ${{ secrets.DEPLOY_EXTENSAO }}
           external_repository: kusmin/updev-experience-deploy
