@@ -25,7 +25,7 @@ jobs:
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
-          github_token: ${{ secrets.DEPLOY_EXTENSAO }}
+          personal_token: ${{ secrets.DEPLOY_EXTENSAO }}
           deploy_key: ${{ secrets.DEPLOY_EXTENSAO }}
           external_repository: kusmin/updev-experience-deploy
           publish_dir: ./dist
