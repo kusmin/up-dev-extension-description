@@ -23,9 +23,13 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          repository: kusmin/updev-experience-deploy
-          branch: master
-          folder: dist
-          token: ${{ secrets.DEPLOY }}
+          personal_token: ${{ secrets.DEPLOY }}
+          external_repository: kusmin/updev-experience-deploy
+          publish_dir: ./dist
+          user_name: renan
+          user_email: renan.lagee@gmail.com
+          publish_branch: master
+          cname: extensao.updev.dev.br
+
