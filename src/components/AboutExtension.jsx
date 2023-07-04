@@ -3,7 +3,11 @@ import React from "react";
 
 const AboutExtension = () => {
     return (
-        <Box sx={{ mt: 4, mb: 2, ml:4, mr:4, p:2 }}>
+        <Box sx={{ mt: 4, mb: 2,
+            ml: { xs: 0, sm: 4 },
+            mr: { xs: 0, sm: 4 },
+            p:{ xs: 0, sm: 2 }
+        }}>
             <Paper elevation={3} sx={{ p: 4, mt: 4 }}>
                 <Typography variant="h4" component="h2" gutterBottom>
                     Sobre a extensão
